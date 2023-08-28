@@ -2,7 +2,7 @@
   "name": "I know what you did last late summer",
   "dockerComposeFile": ["../docker-compose.yaml"],
   "service": "puddings-js",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/app/workspace",
   "customizations": {
     "vscode": {
       "extensions": [

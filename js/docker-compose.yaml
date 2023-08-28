@@ -5,5 +5,5 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./workspace/:/workspace/src
+      - ./workspace/src:/app/workspace/src
     command: /bin/sh -c "while sleep 86400; do :; done" 

@@ -5,11 +5,13 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-WORKDIR /workspace
+WORKDIR /app
 
-COPY ./boilerplate /workspace/
+COPY --chown=node:node ./boilerplate /app/workspace
+
+WORKDIR /app/workspace
 
 RUN su node -c "npm install -g pnpm"
 RUN pnpm install
 
-WORKDIR /workspace/src
+WORKDIR /app/workspace/src
