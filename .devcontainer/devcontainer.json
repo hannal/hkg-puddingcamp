@@ -1,0 +1,62 @@
+{
+  "name": "I know what you did last late summer",
+  "dockerComposeFile": ["../docker-compose.yaml"],
+  "service": "puddings-js",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode",
+        "ZixuanChen.vitest-explorer",
+        "dbaeumer.vscode-eslint",
+        "GitHub.vscode-pull-request-github"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "eslint.alwaysShowStatus": true,
+        "eslint.workingDirectories": [{ "mode": "auto" }],
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": true,
+        "editor.rulers": [100],
+        "eslint.format.enable": true,
+        "eslint.nodePath": "./node_modules",
+        "eslint.validate": ["typescript", "javascript"],
+        "files.trimTrailingWhitespace": true,
+        "prettier.printWidth": 100,
+        "javascript.preferences.importModuleSpecifier": "project-relative",
+        "javascript.preferences.quoteStyle": "single",
+        "typescript.preferences.importModuleSpecifier": "project-relative",
+        "typescript.preferences.quoteStyle": "single",
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.detectIndentation": false,
+          "editor.formatOnSave": true,
+          "editor.tabSize": 2
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.detectIndentation": false,
+          "editor.formatOnSave": true,
+          "editor.tabSize": 2
+        },
+        "[markdown]": {
+          "files.trimTrailingWhitespace": false
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+          "editor.tabSize": 4
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+          "editor.tabSize": 4
+        }
+      }
+    }
+  },
+  "remoteUser": "node",
+  "forwardPorts": [5555]
+}

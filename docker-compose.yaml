@@ -1,0 +1,9 @@
+version: '3'
+services:
+  puddings-js:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./workspace/:/workspace/src
+    command: /bin/sh -c "while sleep 86400; do :; done" 

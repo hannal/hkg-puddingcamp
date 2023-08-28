@@ -1,0 +1,24 @@
+{
+  "name": "i-know-what-you-did-last-late-summer",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5555",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.3"
+  },
+  "imports": {
+    "#/*": [
+      "./src/*",
+      "./src/*.js"
+    ]
+  }
+}
